@@ -77,6 +77,17 @@ civic_xenophagy = {
 	}
 }
 
+civic_privateers = {
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		authority = { NOT = { value = auth_corporate } }
+	}
+
+	random_weight = { base = 5 }
+
+	description = "civic_privateers_effects"
+}
+
 civic_machine_diplomatic_protocols = {
 	potential = { authority = { value = auth_machine_intelligence } }
 	random_weight = { base = 5 }

@@ -24,7 +24,8 @@
  opinion_vs_peaceful_ambassadors:0 "Harmless (Peaceful Ambassadors)"
  opinion_predatory_raiders_vs_inferior:0 "Prey (Predatory Raiders)"
  opinion_vs_spreading_plague:0 "Dreaded Plague (Spreading Plague)"
- opinion_diplomatic_protocols:0 "Diplomatic Protocols"
+ opinion_diplomatic_protocols:0 "You're Just Like Us (Diplomatic Protocols)"
+ opinion_privateers:0 "Filthy Pirates (Privateers)"
  
  civic_corp_destination_resorts:0 "Destination Resorts"
  civic_corp_destination_resorts_desc:0 "This corporation has extensive tourism operations."
@@ -36,6 +37,9 @@
  civic_hive_spreading_plague_effects:0 "Unlocks the §YAssimilation§! Citizenship §HSpecies Right§! for biological species\nHas the §Y'Assimilation'§! casus belli on all other empires\nDecreased §YOpinion§! for most other empires\n\n$MOD_ARMY_DAMAGE_MULT$: §G+30%§!"
  civic_xenophagy:0 "Xenophagy"
  civic_xenophagy_desc:0 "This society has a taste for sentient meat."
+ civic_privateers:0 "Privateers"
+ civic_privateers_desc:0 "This society accepts, regulates, and taxes government-sponsored pirates."
+ civic_privateers_effects:0 "Adds §YPrivateer§! jobs to the planetary capital.\n\n$job_privateer_effect_desc$"
  civic_machine_diplomatic_protocols:0 "Diplomatic Protocols"
  civic_machine_diplomatic_protocols_desc:0 "This machine intelligence speaks and acts in a way calculated to inspire trust in organic species."
  civic_machine_diplomatic_protocols_effects:0 "Increased §YOpinion§! for most other empires"
@@ -52,3 +56,10 @@
 
  mod_planet_livestock_food_produces_mult:0 "$mod_planet_livestock_food_produces_mult$"
  mod_planet_livestock_unity_produces_add:0 "£unity£ Unity from £job_livestock£ §Y$job_livestock_plural$§!"
+
+ job_privateer:0 "Privateer"
+ job_privateer_plural:0 "Privateers"
+ job_privateer_desc:0 "Privateers are government-sponsored pirates allowed to attack the shipping of enemy empires."
+ job_privateer_effect_desc:0 "Privateers increase £crime£ §YCrime§! but produce £energy£ §Y$energy$§! and increase §Y$NAVY_SIZE_TITLE$§!"
+ mod_job_privateer_add: "$planet_privateers$"
+ planet_privateers: "Privateer Jobs"

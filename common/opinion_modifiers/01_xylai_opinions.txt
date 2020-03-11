@@ -210,3 +210,21 @@ opinion_diplomatic_protocols = {
 		}	
 	}
 }
+
+# The Privateers civic adds this opinion
+opinion_privateers = {
+	trigger = {
+		is_country_type = default
+	}
+	opinion = {
+		modifier = {
+		 	add = -10
+			from = { 
+				has_civic = civic_privateers
+			}
+			NOR = { 
+				has_civic = civic_privateers
+			}
+		}	
+	}
+}

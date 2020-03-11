@@ -186,3 +186,28 @@ planet_event = {
 		hidden_effect = { validate_planet_buildings_and_districts = yes }
 	}
 }
+
+# Adds opinions for Privateers
+country_event = {
+	id = xylai.10
+	hide_window = yes
+
+	trigger = {
+		has_civic = civic_privateers
+	}
+	
+	immediate = {
+		every_country = {
+			limit = {
+				is_country_type = default
+				NOT = { is_same_value = root }
+				NOT = { root = { has_opinion_modifier = { who = prev modifier = opinion_privateers } } }
+			}
+			root = {
+				log = "Adding opinion_privateers of [Prev.GetName] to [Root.GetName]"
+				add_opinion_modifier = { who = prev modifier = opinion_privateers }
+			}
+		}
+	}
+}
+
