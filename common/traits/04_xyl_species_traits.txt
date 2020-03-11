@@ -1,0 +1,57 @@
+trait_robot_corrupted_logic = {
+	cost = -1
+
+	opposites = { "trait_robot_logic_engines" }
+	allowed_archetypes = { ROBOT MACHINE }
+
+	species_potential_add = {
+		exists = from
+		from = {
+			OR = {
+				has_authority = auth_machine_intelligence
+				has_technology = tech_droid_workers
+			}			
+		}
+	}
+
+	modifier = {
+		planet_jobs_engineering_research_produces_mult = -0.1
+		planet_jobs_physics_research_produces_mult = -0.1
+		planet_jobs_society_research_produces_mult = -0.1
+	}
+}
+
+trait_robot_leaky_power_cells = {
+	cost = -1
+
+	opposites = { "trait_robot_superconductive" }
+	allowed_archetypes = { ROBOT MACHINE }
+	
+	# Droids and Machine only
+	species_potential_add = {
+		exists = from
+		from = {
+			OR = {
+				has_authority = auth_machine_intelligence
+				has_technology = tech_droid_workers
+			}			
+		}
+	}
+
+	modifier = {
+		planet_jobs_energy_produces_mult = -0.10
+	}
+}
+
+trait_musical = {
+	cost = 1
+
+	potential_crossbreeding_chance = 1.0
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+
+	custom_tooltip = trait_musical_effect
+
+	modifier = {
+		planet_entertainers_unity_produces_add = 2
+	}
+}

@@ -1,0 +1,212 @@
+# Cynical Manipulators "like" anyone more powerful than them
+opinion_cynical_manipulators_vs_superior = {
+	trigger = {
+		is_country_type = default
+		has_ai_personality = cynical_manipulators
+	}
+	hidden_tooltip = {
+		opinion = {
+			modifier = {
+		 		add = 50
+				relative_power = { 
+					who = from 
+					category = all 
+					# The cynical manipulators are inferior
+					value <= inferior 
+				}
+			}	
+		}
+	}
+}
+
+# Cynical Manipulators "dislike" anyone weaker than them
+opinion_cynical_manipulators_vs_inferior = {
+	trigger = {
+		is_country_type = default
+		has_ai_personality = cynical_manipulators
+	}
+	hidden_tooltip = {
+		opinion = {
+			modifier = {
+		 		add = -50
+				relative_power = { 
+					who = from 
+					category = all 
+					# The cynical manipulators are superior
+					value = superior 
+				}
+			}	
+		}
+	}
+}
+
+# Predatory Raiders "dislike" anyone weaker than them
+opinion_predatory_raiders_vs_inferior = {
+	trigger = {
+		is_country_type = default
+		has_ai_personality = predatory_raiders
+	}
+	hidden_tooltip = {
+		opinion = {
+			modifier = {
+		 		add = -50
+				relative_power = { 
+					who = from 
+					category = fleet 
+					# The tribal raiders are superior
+					value = superior 
+				}
+			}	
+		}
+	}
+}
+
+# Technological Supremacists dislike anyone with more advanced technology
+opinion_technological_supremacists_vs_superior_technology = {
+	trigger = {
+		is_country_type = default
+		has_ai_personality = technological_supremacists
+	}
+	opinion = {
+		modifier = {
+		 	add = -20
+			relative_power = { 
+				who = from 
+				category = technology 
+				# The technological supremacists are inferior
+				value = inferior 
+			}
+		}	
+	}
+	opinion = {
+		modifier = {
+		 	add = -40
+			relative_power = { 
+				who = from 
+				category = technology 
+				# The technological supremacists are very inferior
+				value = pathetic 
+			}
+		}	
+	}
+}
+
+# Peaceful Ambassadors like empires who have been at peace a long time
+opinion_peaceful_ambassadors_vs_pacifist = {
+	trigger = {
+		is_country_type = default
+		has_ai_personality = peaceful_ambassadors
+	}
+	opinion = {
+		modifier = {
+		 	add = 20
+			from = { years_of_peace = { value > 19 } }
+		}	
+	}
+	opinion = {
+		modifier = {
+		 	add = 20
+			from = { years_of_peace = { value > 39 } }
+		}	
+	}
+	opinion = {
+		modifier = {
+		 	add = 20
+			from = { years_of_peace = { value > 59 } }
+		}	
+	}
+	opinion = {
+		modifier = {
+		 	add = 20
+			from = { years_of_peace = { value > 79 } }
+		}	
+	}
+	opinion = {
+		modifier = {
+		 	add = 20
+			from = { years_of_peace = { value > 99 } }
+		}	
+	}
+}
+# Peaceful Ambassadors dislike war
+opinion_peaceful_ambassadors_vs_at_war = {
+	trigger = {
+		is_country_type = default
+		has_ai_personality = peaceful_ambassadors
+	}
+	opinion = {
+		modifier = {
+		 	add = -50
+			OR = {
+				from = { is_at_war = yes }
+				has_opinion_modifier = { who = from modifier = opinion_genocidal }
+				has_opinion_modifier = { who = from modifier = opinion_nuker }
+			}
+		}	
+	}
+}
+
+# Everyone likes Peaceful Ambassadors
+# NOTE: This opinion is added magically, probably because of the name
+opinion_vs_peaceful_ambassadors = {
+	trigger = {
+		is_country_type = default
+	}
+	opinion = {
+		modifier = {
+		 	add = 20
+			from = { has_ai_personality = peaceful_ambassadors }
+			NOR = { 
+				has_valid_civic = civic_fanatic_purifiers 
+				has_valid_civic = civic_hive_devouring_swarm
+				has_valid_civic = civic_machine_terminator
+			}
+		}	
+	}
+}
+
+# Species who can be infected really dislike the Spreading Plague
+opinion_vs_spreading_plague = {
+	trigger = {
+		is_country_type = default
+	}
+	opinion = {
+		modifier = {
+		 	add = -100
+			from = { has_ai_personality = spreading_plague }
+			NOR = { 
+				has_ethic = ethic_gestalt_consciousness
+			}
+		}	
+	}
+}
+
+# The Diplomatic Protocols civic adds this opinion
+opinion_diplomatic_protocols = {
+	trigger = {
+		is_country_type = default
+	}
+	opinion = {
+		modifier = {
+		 	add = 40
+			from = { 
+				has_civic = civic_machine_diplomatic_protocols
+			}
+			NOR = { 
+				has_ethic = ethic_gestalt_consciousness
+			}
+		}	
+	}
+	opinion = {
+		modifier = {
+		 	add = 40
+			from = { 
+				has_civic = civic_machine_diplomatic_protocols 
+				has_civic = civic_machine_assimilator
+			}
+			NOR = { 
+				has_ethic = ethic_gestalt_consciousness
+			}
+		}	
+	}
+}

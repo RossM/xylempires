@@ -1,0 +1,188 @@
+namespace = xylai
+
+# Adds opinions for Cynical Manipulators
+country_event = {
+	id = xylai.1
+	hide_window = yes
+
+	trigger = {
+		has_ai_personality = cynical_manipulators
+	}
+	
+	immediate = {
+		every_country = {
+			limit = {
+				is_country_type = default
+				NOT = { is_same_value = root }
+				NOT = { root = { has_opinion_modifier = { who = prev modifier = opinion_cynical_manipulators_vs_inferior } } }
+			}
+			root = {
+				log = "Adding opinion_cynical_manipulators_vs_(inferior,superior) of [Prev.GetName] to [Root.GetName]"
+				add_opinion_modifier = { who = prev modifier = opinion_cynical_manipulators_vs_inferior }
+				add_opinion_modifier = { who = prev modifier = opinion_cynical_manipulators_vs_superior }
+			}
+		}
+	}
+}
+
+# Adds opinions for Technological Supremacists
+country_event = {
+	id = xylai.2
+	hide_window = yes
+
+	trigger = {
+		has_ai_personality = technological_supremacists
+	}
+	
+	immediate = {
+		every_country = {
+			limit = {
+				is_country_type = default
+				NOT = { is_same_value = root }
+				NOT = { root = { has_opinion_modifier = { who = prev modifier = opinion_technological_supremacists_vs_superior_technology } } }
+			}
+			root = {
+				log = "Adding opinion_technological_supremacists_vs_superior_technology of [Prev.GetName] to [Root.GetName]"
+				add_opinion_modifier = { who = prev modifier = opinion_technological_supremacists_vs_superior_technology }
+			}
+		}
+	}
+}
+
+# Adds opinions for Peaceful Ambassadors
+country_event = {
+	id = xylai.3
+	hide_window = yes
+
+	trigger = {
+		has_ai_personality = peaceful_ambassadors
+	}
+	
+	immediate = {
+		every_country = {
+			limit = {
+				is_country_type = default
+				NOT = { is_same_value = root }
+				NOT = { root = { has_opinion_modifier = { who = prev modifier = opinion_peaceful_ambassadors_vs_pacifist } } }
+			}
+			root = {
+				log = "Adding opinion_peaceful_ambassadors_vs_(pacifist,at_war) of [Prev.GetName] to [Root.GetName]"
+				add_opinion_modifier = { who = prev modifier = opinion_peaceful_ambassadors_vs_pacifist }
+				add_opinion_modifier = { who = prev modifier = opinion_peaceful_ambassadors_vs_at_war }
+			}
+		}
+	}
+}
+
+# Adds opinions for Predatory Raiders
+country_event = {
+	id = xylai.4
+	hide_window = yes
+
+	trigger = {
+		has_ai_personality = predatory_raiders
+	}
+	
+	immediate = {
+		every_country = {
+			limit = {
+				is_country_type = default
+				NOT = { is_same_value = root }
+				NOT = { root = { has_opinion_modifier = { who = prev modifier = opinion_predatory_raiders_vs_inferior } } }
+			}
+			root = {
+				log = "Adding opinion_predatory_raiders_vs_inferior of [Prev.GetName] to [Root.GetName]"
+				add_opinion_modifier = { who = prev modifier = opinion_predatory_raiders_vs_inferior }
+			}
+		}
+	}
+}
+
+
+# Adds opinions for Spreading Plague
+country_event = {
+	id = xylai.5
+	hide_window = yes
+
+	trigger = {
+		has_ai_personality = spreading_plague
+	}
+	
+	immediate = {
+		every_country = {
+			limit = {
+				is_country_type = default
+				NOT = { is_same_value = root }
+				NOT = { root = { has_opinion_modifier = { who = prev modifier = opinion_vs_spreading_plague } } }
+			}
+			root = {
+				log = "Adding opinion_vs_spreading_plague of [Prev.GetName] to [Root.GetName]"
+				add_opinion_modifier = { who = prev modifier = opinion_vs_spreading_plague }
+			}
+		}
+	}
+}
+
+# Adds opinions for Diplomatic Protocols
+country_event = {
+	id = xylai.6
+	hide_window = yes
+
+	trigger = {
+		has_civic = civic_machine_diplomatic_protocols
+	}
+	
+	immediate = {
+		every_country = {
+			limit = {
+				is_country_type = default
+				NOT = { is_same_value = root }
+				NOT = { root = { has_opinion_modifier = { who = prev modifier = opinion_diplomatic_protocols } } }
+			}
+			root = {
+				log = "Adding opinion_diplomatic_protocols of [Prev.GetName] to [Root.GetName]"
+				add_opinion_modifier = { who = prev modifier = opinion_diplomatic_protocols }
+			}
+		}
+	}
+}
+
+# Give Resort Planets tech for Destination Resorts civic
+country_event = {
+	id = xylai.8
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_civic = civic_corp_destination_resorts
+	}
+	
+	immediate = {
+		give_technology = { message = no tech = tech_resort_colonies }
+	}
+}
+
+# Make capital a Resort Planet for Destination Resorts civic
+planet_event = {
+	id = xylai.9
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		owner = {
+			has_civic = civic_corp_destination_resorts
+		}
+	}
+	
+	immediate = {
+		add_modifier = {
+			modifier = resort_colony
+			days = -1
+		}
+		hidden_effect = {
+			remove_building = building_colony_shelter
+			add_building = building_resort_capital
+		}
+		hidden_effect = { validate_planet_buildings_and_districts = yes }
+	}
+}

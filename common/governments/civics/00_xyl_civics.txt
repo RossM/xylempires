@@ -1,0 +1,86 @@
+civic_corp_destination_resorts = {
+	modification = no
+
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		authority = { value = auth_corporate } 
+	}
+	possible = {
+		ethics = {
+			OR = {
+				text = civic_tooltip_xenophile
+				value = ethic_xenophile
+				value = ethic_fanatic_xenophile
+			}
+		}
+	}
+	random_weight = { base = 5 }
+
+	modifier = {
+		pop_growth_from_immigration = 0.15
+	}
+
+	description = "civic_corp_destination_resorts_effects"
+}
+
+civic_corp_mining_guilds = {
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		authority = { value = auth_corporate }
+	}
+	random_weight = { base = 5 }
+	modifier = {
+#		planet_jobs_minerals_produces_mult = 0.15
+		planet_miners_minerals_produces_add = 1
+	}
+}
+
+civic_hive_spreading_plague = {
+	modification = no
+
+	potential = { authority = { value = auth_hive_mind } }
+	possible = {
+		civics = {
+			NOT = {
+				value = civic_hive_devouring_swarm
+			}
+		}
+	}
+
+	modifier = {
+		army_damage_mult = 0.30
+	}
+
+	random_weight = { base = 5 }
+
+	description = "civic_hive_spreading_plague_effects"
+}
+
+civic_xenophagy = {
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		authority = { NOT = { value = auth_corporate } }
+	}
+	possible = {
+		ethics = {
+			OR = {
+				text = civic_tooltip_xenophobe
+				value = ethic_xenophobe
+				value = ethic_fanatic_xenophobe
+			}
+		}
+	}
+	random_weight = { base = 5 }
+	modifier = {
+		planet_livestock_food_produces_add = 2
+		planet_livestock_unity_produces_add = 1
+	}
+}
+
+civic_machine_diplomatic_protocols = {
+	potential = { authority = { value = auth_machine_intelligence } }
+	random_weight = { base = 5 }
+
+	description = "civic_machine_diplomatic_protocols_effects"
+}
+

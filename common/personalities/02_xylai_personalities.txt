@@ -1,0 +1,552 @@
+# Scrapper Alliance
+# Fanatic Xenophobe, Militarist
+# Democratic, Post-Apocalyptic, Mining Guilds
+# Industrious, Strong, Repugnant
+opportunistic_scavengers = {
+	# Based off xenophobic isolationists & hive mind
+	aggressiveness = 1.0	# only attack if they can't expand peacefully
+	trade_willingness = 0.9
+	bravery = 1.5
+	combat_bravery = 1.0
+
+	military_spending = 0.8
+	colony_spending = 1.2
+
+	federation_acceptance = -50
+	nap_acceptance = -10
+	defensive_pact_acceptance = -50
+	migration_pact_acceptance = -100
+
+	advanced_start_chance = 10
+
+	weapon_preferences = weapon_type_kinetic
+	armor_ratio = 0.0
+	shields_ratio = 0.5
+	hull_ratio = 0.5
+
+	threat_modifier = 0.5
+	threat_others_modifier = 0.5
+	# Very high border friction to encourage wars against neighbors
+	friction_modifier = 5.0		
+	claims_modifier = 1.0
+
+	behaviour = {
+		conqueror = yes
+		subjugator = no
+		liberator = no
+		opportunist = yes
+		slaver = no
+		uplifter = no
+		purger = yes
+		displacer = yes
+		dominator = yes
+		infiltrator = no
+		robot_exploiter = yes
+		robot_liberator = no
+		propagator = yes
+		multispecies = no
+		isolationist = yes
+		crisis_fighter = yes
+		wants_tribute = yes
+	}
+
+	allow = {
+		is_country_type = default
+		NOT = {
+			has_ethic = "ethic_pacifist"
+			has_ethic = "ethic_fanatic_pacifist"
+		}
+		has_ethic = "ethic_fanatic_xenophobe"
+		has_valid_civic = civic_post_apocalyptic
+	}
+
+	weight_modifier = {
+		weight = 300
+	}
+}
+
+# Xenoid Hive
+# Authoritarian, Fanatic Spiritualist
+# Imperial, Imperial Cult, Post-Apocalyptic
+# Conformists, Rapid Breeders, Fleeting
+devoted_hive = {
+	# Based off evangelising zealots
+	aggressiveness = 0.5	# only attack if they can't expand peacefully
+	trade_willingness = 0.75
+	bravery = 1.5
+	combat_bravery = 1.25
+
+	military_spending = 1.0
+	colony_spending = 1.0
+
+	federation_acceptance = -100
+	nap_acceptance = 0
+	defensive_pact_acceptance = 0
+	migration_pact_acceptance = -100
+
+	advanced_start_chance = 50
+
+	weapon_preferences = weapon_type_strike_craft
+	armor_ratio = 0.3
+	shields_ratio = 0.5
+	hull_ratio = 0.2
+
+	threat_modifier = 0.75
+	threat_others_modifier = 0.66
+	friction_modifier = 1.5
+	claims_modifier = 1.5
+
+	behaviour = {
+		conqueror = yes
+		subjugator = no
+		liberator = no
+		opportunist = yes
+		slaver = yes
+		uplifter = no
+		purger = no
+		displacer = no
+		infiltrator = no
+		dominator = yes
+		robot_exploiter = no
+		robot_liberator = no
+		propagator = yes
+		multispecies = no
+		crisis_fighter = yes
+	}
+
+	allow = {
+		is_country_type = default
+		NOT = {
+			has_ethic = "ethic_pacifist"
+			has_ethic = "ethic_fanatic_pacifist"
+		}
+		has_valid_civic = civic_imperial_cult
+		has_trait = trait_conformists
+	}
+
+	weight_modifier = {
+		weight = 300
+	}
+}
+
+# Guardians of Koros
+# Fanatic Xenophobe, Spiritualist
+# Dictatorial, Functional Architecture, Police State
+# Traditional, Communal, Enduring, Resilient, Nonadaptive
+stalwart_guardians = {
+	# Based off xenophobic isolationists
+	aggressiveness = 0.25
+	trade_willingness = 0.5
+	bravery = 2.0
+	combat_bravery = 2.0
+
+	military_spending = 1.4
+	colony_spending = 0.6
+
+	federation_acceptance = -20
+	nap_acceptance = -20
+	defensive_pact_acceptance = -20
+	migration_pact_acceptance = -20
+
+	advanced_start_chance = 10
+
+	weapon_preferences = weapon_type_explosive
+	armor_ratio = 0.6
+	shields_ratio = 0.0
+	hull_ratio = 0.4
+
+	threat_modifier = 1.5
+	threat_others_modifier = 1.0
+	friction_modifier = 2.0
+	claims_modifier = 5.0
+
+	behaviour = {
+		conqueror = no
+		subjugator = no
+		liberator = no
+		opportunist = no
+		slaver = no
+		uplifter = no
+		purger = no
+		displacer = yes
+		dominator = no
+		infiltrator = no
+		robot_exploiter = no
+		robot_liberator = no
+		propagator = no
+		multispecies = no
+		isolationist = yes
+		crisis_fighter = yes
+		wants_tribute = no
+	}
+
+	allow = {
+		is_country_type = default
+		OR = {
+			has_ethic = "ethic_pacifist"
+			has_ethic = "ethic_fanatic_pacifist"
+			has_ethic = "ethic_spiritualist"
+			has_ethic = "ethic_fanatic_spiritualist"
+		}
+		OR = {
+			has_ethic = "ethic_xenophobe"
+			has_ethic = "ethic_fanatic_xenophobe"
+		}
+		has_trait = trait_resilient
+	}
+
+	weight_modifier = {
+		weight = 300
+	}
+}
+
+
+# Operations Directorate
+# Authoritarian, Xenophobe, Materialist
+# Oligarchic, Shadow Council, Police State
+# Industrious, Natural Engineers, Deviants
+cynical_manipulators = {
+	# Based on hegemonic imperialists
+	aggressiveness = 1.5
+	trade_willingness = 1.0
+	bravery = 0.5
+	combat_bravery = 1.0
+
+	military_spending = 1.1
+	colony_spending = 1.1
+
+	# Cynical Manipulators get +50 opinion of superior countries,
+	# and -50 opinion of inferior countries.
+	
+	federation_acceptance = 0
+	nap_acceptance = 0
+	defensive_pact_acceptance = 0
+	migration_pact_acceptance = 0
+
+	advanced_start_chance = 50
+
+	weapon_preferences = weapon_type_energy
+	armor_ratio = 0.4
+	shields_ratio = 0.6
+	hull_ratio = 0.0
+
+	threat_modifier = 1.0
+	threat_others_modifier = 0.66
+	friction_modifier = 0.25
+	claims_modifier = 1.0
+
+	behaviour = {
+		conqueror = yes
+		subjugator = no
+		liberator = no
+		opportunist = yes
+		slaver = yes
+		uplifter = no
+		purger = no
+		displacer = no
+		dominator = no
+		infiltrator = yes
+		robot_exploiter = yes
+		robot_liberator = no
+		propagator = no
+		multispecies = yes
+		crisis_fighter = yes
+	}
+
+
+	allow = {
+		is_country_type = default
+		NOT = {
+			has_ethic = "ethic_egalitarian"
+			has_ethic = "ethic_fanatic_egalitarian"
+			has_ethic = "ethic_xenophile"
+			has_ethic = "ethic_fanatic_xenophile"
+		}
+		OR = {
+			has_ethic = "ethic_authoritarian"
+			has_ethic = "ethic_fanatic_authoritarian"
+			has_ethic = "ethic_materialist"
+			has_ethic = "ethic_fanatic_materialist"
+		}
+		has_civic = civic_shadow_council
+	}
+
+	weight_modifier = {
+		weight = 300
+	}
+}
+
+# Stellar Dominion (Hegemonic Imperialists)
+# Xenophobe, Fanatic Materialist
+# Oligarchic, Technocracy, Mechanist
+# Intelligent, Talented, Wasteful
+technological_supremacists = {
+	# Based off hegemonic imperialists
+	aggressiveness = 1.5
+	trade_willingness = 0.8
+	bravery = 1.0
+	combat_bravery = 1.0
+
+	military_spending = 1.1
+	colony_spending = 0.9
+
+	# Technological Supremacists have a -20/-40 opinion modifier
+	# of anyone with more advanced tech than them
+	
+	federation_acceptance = -10
+	nap_acceptance = 10
+	defensive_pact_acceptance = 10
+	migration_pact_acceptance = -10
+
+	advanced_start_chance = 50
+
+	weapon_preferences = weapon_type_strike_craft
+	armor_ratio = 0.5
+	shields_ratio = 0.5
+	hull_ratio = 0.0
+
+	threat_modifier = 1.0
+	threat_others_modifier = 0.66
+	friction_modifier = 1.5
+	claims_modifier = 1.5
+
+	behaviour = {
+		conqueror = yes
+		subjugator = yes
+		liberator = no
+		opportunist = yes
+		slaver = no
+		uplifter = no
+		purger = no
+		displacer = no
+		dominator = yes
+		infiltrator = yes
+		robot_exploiter = yes
+		robot_liberator = yes
+		propagator = no
+		multispecies = no
+		crisis_fighter = yes
+	}
+
+
+	allow = {
+		is_country_type = default
+		NOT = {
+			has_ethic = "ethic_pacifist"
+			has_ethic = "ethic_fanatic_pacifist"
+		}
+		OR = {
+			has_ethic = "ethic_materialist"
+			has_ethic = "ethic_fanatic_materialist"
+		}
+		OR = {
+			has_ethic = "ethic_militarist"
+			has_ethic = "ethic_fanatic_militarist"
+			has_ethic = "ethic_xenophobe"
+			has_ethic = "ethic_fanatic_xenophobe"
+		}
+		has_valid_civic = civic_technocracy
+	}
+
+	weight_modifier = {
+		weight = 300
+	}
+}
+
+# Ambassadors of Nerus
+# Fanatic Pacifist, Spiritualist
+# Oligarchic, Exalted Priesthood, Meritocracy
+# Thrifty, Natural Physicists, Weak
+peaceful_ambassadors = {
+	# Based off Harmonious Hierarchy
+	aggressiveness = 0.0		# Don't declare war!
+	trade_willingness = 0.9
+	bravery = 0.75
+	combat_bravery = 1.0
+
+	military_spending = 0.5
+	colony_spending = 1.0
+
+	# Peaceful Ambassadors get -50 opinion of countries currently at war,
+	# and up to +100 for countries that have been at peace for a long time
+	
+	federation_acceptance = 50
+	# Always agree to non-aggression pacts
+	nap_acceptance = 200
+	defensive_pact_acceptance = 0
+	migration_pact_acceptance = 0
+
+	advanced_start_chance = 10
+
+	weapon_preferences = weapon_type_energy
+	armor_ratio = 0.0
+	shields_ratio = 0.8
+	hull_ratio = 0.2
+
+	threat_modifier = 3.0
+	# Conquering peaceful ambassadors makes you very threatening!
+	threat_others_modifier = 3.0
+	friction_modifier = 0.0
+	claims_modifier = 1.5
+
+	behaviour = {
+		conqueror = no
+		subjugator = no
+		liberator = no
+		opportunist = no
+		slaver = no
+		uplifter = yes
+		purger = no
+		displacer = no
+		dominator = no
+		infiltrator = no
+		robot_exploiter = yes
+		robot_liberator = no
+		propagator = no
+		multispecies = no
+		crisis_fighter = yes
+	}
+
+	allow = {
+		is_country_type = default
+		has_ethic = "ethic_fanatic_pacifist"
+		OR = {
+			has_ethic = "ethic_spiritualist"
+			has_ethic = "ethic_fanatic_spiritualist"
+			has_ethic = "ethic_xenophile"
+			has_ethic = "ethic_fanatic_xenophile"
+		}
+		has_valid_civic = civic_exalted_priesthood
+	}
+
+	weight_modifier = {
+		weight = 500
+	}
+}
+
+# Mantis Supremacy
+# Fanatic Militarist, Xenophobe
+# Dictatorial, Barbaric Despoilers, Warrior Culture
+# Very Strong, Solitary
+predatory_raiders = {
+	# Based off hegemonic imperialists
+	aggressiveness = 1.5
+	trade_willingness = 0.8
+	bravery = 1.2
+	combat_bravery = 1.2
+
+	military_spending = 1.3
+	colony_spending = 0.8
+
+	federation_acceptance = -20
+	nap_acceptance = -20
+	commercial_pact_acceptance = -20
+	research_agreement_acceptance = -20
+	defensive_pact_acceptance = -20
+	migration_pact_acceptance = -50
+
+	advanced_start_chance = 50
+
+	weapon_preferences = weapon_type_energy
+	armor_ratio = 0.5
+	shields_ratio = 0.5
+	hull_ratio = 0.0
+
+	threat_modifier = 1.0
+	threat_others_modifier = 0.66
+	friction_modifier = 2.0
+	claims_modifier = 1.5
+
+	behaviour = {
+		conqueror = yes
+		subjugator = yes
+		liberator = no
+		opportunist = yes
+		slaver = yes
+		uplifter = no
+		purger = no
+		displacer = no
+		dominator = yes
+		infiltrator = no
+		robot_exploiter = yes
+		robot_liberator = no
+		propagator = no
+		multispecies = no
+		crisis_fighter = yes
+	}
+
+
+	allow = {
+		is_country_type = default
+		OR = {
+			has_ethic = "ethic_militarist"
+			has_ethic = "ethic_fanatic_militarist"
+		}
+		OR = {
+			has_ethic = "ethic_xenophobe"
+			has_ethic = "ethic_fanatic_xenophobe"
+		}
+		OR = {
+			has_trait = trait_very_strong
+			has_trait = trait_strong
+		}
+		has_valid_civic = civic_barbaric_despoilers
+	}
+
+	weight_modifier = {
+		weight = 2000
+	}
+}
+
+spreading_plague = {
+	aggressiveness = 1.5
+	trade_willingness = 0.5
+	bravery = 1.2
+	combat_bravery = 1.0
+
+	military_spending = 1.0
+	colony_spending = 1.4
+
+	federation_acceptance = -50
+
+	advanced_start_chance = 75
+
+	weapon_preferences = weapon_type_strike_craft
+	armor_ratio = 0.2
+	shields_ratio = 0.4
+	hull_ratio = 0.4
+
+	threat_modifier = 1.0
+	threat_others_modifier = 0.5
+	friction_modifier = 2.0
+	claims_modifier = 1.5
+
+	behaviour = {
+		conqueror = yes
+		subjugator = no
+		liberator = no
+		opportunist = yes
+		slaver = no
+		uplifter = no
+		purger = no
+		displacer = no
+		dominator = yes
+		infiltrator = no
+		robot_exploiter = no
+		robot_liberator = no
+		propagator = no
+		multispecies = yes
+		crisis_fighter = yes
+	}
+
+	allow = {
+		is_country_type = default
+		has_authority = "auth_hive_mind"
+		has_valid_civic = civic_hive_spreading_plague
+	}
+
+	weight_modifier = {
+		weight = 2000
+	}
+}
+
