@@ -57,7 +57,9 @@ opportunistic_scavengers = {
 			has_ethic = "ethic_fanatic_pacifist"
 		}
 		has_ethic = "ethic_fanatic_xenophobe"
-		has_valid_civic = civic_post_apocalyptic
+		OR = {
+			has_valid_civic = civic_post_apocalyptic
+		}
 	}
 
 	weight_modifier = {

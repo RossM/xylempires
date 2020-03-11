@@ -43,6 +43,28 @@ trait_robot_leaky_power_cells = {
 	}
 }
 
+trait_robot_low_powered_servos = {
+	cost = -1
+
+	allowed_archetypes = { ROBOT MACHINE }
+	
+	# Droids and Machine only
+	species_potential_add = {
+		exists = from
+		from = {
+			OR = {
+				has_authority = auth_machine_intelligence
+				has_technology = tech_droid_workers
+			}			
+		}
+	}
+
+	modifier = {
+		army_damage_mult = -0.20
+		planet_jobs_worker_produces_mult = -0.025
+	}
+}
+
 trait_musical = {
 	cost = 1
 

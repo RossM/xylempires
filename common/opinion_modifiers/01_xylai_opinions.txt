@@ -188,21 +188,9 @@ opinion_diplomatic_protocols = {
 	}
 	opinion = {
 		modifier = {
-		 	add = 40
+		 	add = 50
 			from = { 
 				has_civic = civic_machine_diplomatic_protocols
-			}
-			NOR = { 
-				has_ethic = ethic_gestalt_consciousness
-			}
-		}	
-	}
-	opinion = {
-		modifier = {
-		 	add = 40
-			from = { 
-				has_civic = civic_machine_diplomatic_protocols 
-				has_civic = civic_machine_assimilator
 			}
 			NOR = { 
 				has_ethic = ethic_gestalt_consciousness
