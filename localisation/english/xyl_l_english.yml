@@ -26,6 +26,7 @@
  opinion_vs_spreading_plague:0 "Dreaded Plague"
  opinion_diplomatic_protocols:0 "Diplomatic Protocols"
  opinion_privateers:0 "Filthy Pirates"
+ opinion_empathic_link:0 "Shared Empathic Link"
  
  civic_corp_destination_resorts:0 "Destination Resorts"
  civic_corp_destination_resorts_desc:0 "This corporation has extensive tourism operations."
@@ -56,7 +57,7 @@
  trait_enigmatic_anatomy:0 "Enigmatic Anatomy"
  trait_enigmatic_anatomy_desc:0 "§LThis species has a uniquely bizarre anatomy that defies conventional principles.§!"
  trait_empathic_link:0 "Empathic Link"
- trait_empathic_link:0 "§LA low-level communal psychic link gives this species a strong sense of purpose.§!"
+ trait_empathic_link_desc:0 "§LA low-level communal psychic link gives this species a strong sense of purpose.§!"
 
  HIVE_SPECIES_MUST_BE_NON_HIVE:0 "$TRIGGER_FAIL$Requires §Y$ap_evolutionary_mastery$§! or §Y$civic_hive_spreading_plague$§!. Only organic non-§Y$trait_hive_mind$§! species can be assimilated."
 

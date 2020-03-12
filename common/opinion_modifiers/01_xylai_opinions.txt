@@ -216,3 +216,18 @@ opinion_privateers = {
 		}	
 	}
 }
+
+opinion_empathic_link = {
+	trigger = {
+		is_country_type = default
+	}
+	opinion = {
+		modifier = {
+		 	add = 100
+			from = {
+				has_trait = trait_empathic_link
+			}
+			has_trait = trait_empathic_link
+		}	
+	}
+}
