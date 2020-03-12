@@ -39,7 +39,7 @@
  civic_xenophagy_desc:0 "This society has a taste for sentient meat."
  civic_privateers:0 "Privateers"
  civic_privateers_desc:0 "This society accepts, regulates, and taxes government-sponsored pirates."
- civic_privateers_effects:0 "Adds §YPrivateer§! jobs to the planetary capital.\n\n$job_privateer_effect_desc$"
+ civic_privateers_effects:0 "Adds §YPrivateer§! jobs.\n\n$job_privateer_effect_desc$"
  civic_machine_diplomatic_protocols:0 "Diplomatic Protocols"
  civic_machine_diplomatic_protocols_desc:0 "Every drone has a unique synthetic personality that acts in ways calculated to inspire trust in organic species."
  civic_machine_diplomatic_protocols_effects:0 "Increased §YOpinion§! for most other empires"
@@ -55,6 +55,8 @@
  trait_musical_effect:0 "£amenities£ Amenities from £job_entertainer£ §Y$job_entertainer_plural$§!: §G+100%§!\n£unity£ Unity from £job_entertainer£ §Y$job_entertainer_plural$§!: §G+100%§!\n$mod_pop_ethic_xenophile_attraction_mult$: §G+30%§!"
  trait_enigmatic_anatomy:0 "Enigmatic Anatomy"
  trait_enigmatic_anatomy_desc:0 "§LThis species has a uniquely bizarre anatomy that defies conventional principles.§!"
+ trait_empathic_link:0 "Empathic Link"
+ trait_empathic_link:0 "§LA low-level communal psychic link gives this species a strong sense of purpose.§!"
 
  HIVE_SPECIES_MUST_BE_NON_HIVE:0 "$TRIGGER_FAIL$Requires §Y$ap_evolutionary_mastery$§! or §Y$civic_hive_spreading_plague$§!. Only organic non-§Y$trait_hive_mind$§! species can be assimilated."
 

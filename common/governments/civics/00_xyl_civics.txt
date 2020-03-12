@@ -85,6 +85,10 @@ civic_privateers = {
 
 	random_weight = { base = 5 }
 
+	modifier = {
+		job_privateer_add = 2
+	}
+
 	description = "civic_privateers_effects"
 }
 
