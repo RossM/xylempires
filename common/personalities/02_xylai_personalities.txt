@@ -4,7 +4,7 @@
 # Industrious, Strong, Repugnant
 opportunistic_scavengers = {
 	# Based off xenophobic isolationists & hive mind
-	aggressiveness = 1.0	# only attack if they can't expand peacefully
+	aggressiveness = 1.5	# only attack if they can't expand peacefully
 	trade_willingness = 0.9
 	bravery = 1.5
 	combat_bravery = 1.0
@@ -73,7 +73,7 @@ opportunistic_scavengers = {
 # Conformists, Rapid Breeders, Fleeting
 devoted_hive = {
 	# Based off evangelising zealots
-	aggressiveness = 0.5	# only attack if they can't expand peacefully
+	aggressiveness = 2.0	# only attack if they can't expand peacefully
 	trade_willingness = 0.75
 	bravery = 1.5
 	combat_bravery = 1.25
@@ -211,7 +211,7 @@ cynical_manipulators = {
 	# Based on hegemonic imperialists
 	aggressiveness = 1.5
 	trade_willingness = 1.0
-	bravery = 0.5
+	bravery = 0.9
 	combat_bravery = 1.0
 
 	military_spending = 1.1
@@ -432,7 +432,7 @@ peaceful_ambassadors = {
 # Very Strong, Solitary
 predatory_raiders = {
 	# Based off hegemonic imperialists
-	aggressiveness = 1.5
+	aggressiveness = 2.5
 	trade_willingness = 0.8
 	bravery = 1.2
 	combat_bravery = 1.2

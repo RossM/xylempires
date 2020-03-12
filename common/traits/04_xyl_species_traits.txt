@@ -1,5 +1,5 @@
 trait_robot_corrupted_logic = {
-	cost = -1
+	cost = -2
 
 	opposites = { "trait_robot_logic_engines" }
 	allowed_archetypes = { ROBOT MACHINE }
@@ -22,7 +22,7 @@ trait_robot_corrupted_logic = {
 }
 
 trait_robot_leaky_power_cells = {
-	cost = -1
+	cost = -2
 
 	opposites = { "trait_robot_superconductive" }
 	allowed_archetypes = { ROBOT MACHINE }
@@ -39,11 +39,11 @@ trait_robot_leaky_power_cells = {
 	}
 
 	modifier = {
-		planet_jobs_energy_produces_mult = -0.10
+		planet_jobs_energy_produces_mult = -0.15
 	}
 }
 
-trait_robot_low_powered_servos = {
+trait_robot_underpowered_servos = {
 	cost = -1
 
 	allowed_archetypes = { ROBOT MACHINE }
@@ -75,5 +75,20 @@ trait_musical = {
 
 	modifier = {
 		planet_entertainers_unity_produces_add = 2
+		pop_ethic_xenophile_attraction_mult = 0.30
+	}
+}
+
+trait_enigmatic_anatomy = {
+	cost = 1
+
+	potential_crossbreeding_chance = 1.0
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+
+	modifier = {
+		leader_age = 10
+		army_damage_mult = 0.10
+		pop_ethic_xenophobe_attraction_mult = 0.30
+		pop_environment_tolerance = -0.05
 	}
 }
