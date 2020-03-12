@@ -68,6 +68,8 @@ trait_robot_underpowered_servos = {
 trait_musical = {
 	cost = 1
 
+	opposites = { "trait_enigmatic_anatomy" }
+
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 
@@ -81,6 +83,8 @@ trait_musical = {
 
 trait_enigmatic_anatomy = {
 	cost = 1
+
+	opposites = { "trait_musical" }
 
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { BIOLOGICAL LITHOID }
@@ -102,6 +106,6 @@ trait_empathic_link = {
 	modifier = {
 		pop_happiness = 0.05
 		pop_ethic_pacifist_attraction_mult = 0.30
-		army_damage_mult = -0.10
+		army_attack_damage_mult = -0.2
 	}
 }
