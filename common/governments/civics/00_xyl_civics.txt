@@ -86,7 +86,8 @@ civic_privateers = {
 	random_weight = { base = 5 }
 
 	modifier = {
-		job_privateer_add = 2
+		job_privateer_add = 1
+		job_privateer_per_pop = 0.04
 	}
 
 	description = "civic_privateers_effects"
@@ -99,3 +100,19 @@ civic_machine_diplomatic_protocols = {
 	description = "civic_machine_diplomatic_protocols_effects"
 }
 
+civic_machine_mechorganic_technology = {
+	modification = no
+
+	potential = { authority = { value = auth_machine_intelligence } }
+	random_weight = { base = 5 }
+
+	modifier = {
+		ship_shield_mult = 0.25
+		ship_hull_regen_add_perc = 0.5
+		ship_armor_regen_add_perc = 0.5
+		category_biology_research_speed_mult = 0.20
+
+		planet_pops_robotics_upkeep_mult = 0.2
+		ships_upkeep_mult = 0.2
+	}
+}

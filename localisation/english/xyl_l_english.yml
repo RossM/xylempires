@@ -40,10 +40,14 @@
  civic_xenophagy_desc:0 "This society has a taste for sentient meat."
  civic_privateers:0 "Privateers"
  civic_privateers_desc:0 "This society accepts, regulates, and taxes government-sponsored pirates."
- civic_privateers_effects:0 "Adds §YPrivateer§! jobs.\n\n$job_privateer_effect_desc$"
+ civic_privateers_effects:0 "$mod_job_privateer_add$: §G+1§!\n§G+1§! $job_privateer$ Job per 25 Pops\n\n$job_privateer_effect_desc$"
  civic_machine_diplomatic_protocols:0 "Diplomatic Protocols"
  civic_machine_diplomatic_protocols_desc:0 "Every drone has a unique synthetic personality that acts in ways calculated to inspire trust in organic species."
  civic_machine_diplomatic_protocols_effects:0 "Increased §YOpinion§! for most other empires"
+ civic_machine_devoted_caretakers:0 "Devoted Caretakers"
+ civic_machine_devoted_caretakers_desc:0 "The Machine Intelligence considers defense to be its primary task, not expansion."
+ civic_machine_mechorganic_technology:0 "Mechorganic Technology"
+ civic_machine_mechorganic_technology_desc:0 "This empire's technology blends mechanical and organic systems."
 
  trait_robot_corrupted_logic:0 "Corrupted Logic"
  trait_robot_corrupted_logic_desc:0 "§LFaulty maintenance has caused uncorrectable errors in core logic routines.§!"
@@ -58,6 +62,8 @@
  trait_enigmatic_anatomy_desc:0 "§LThis species has a uniquely bizarre anatomy that defies conventional principles.§!"
  trait_empathic_link:0 "Empathic Link"
  trait_empathic_link_desc:0 "§LA low-level communal psychic link gives this species a strong sense of purpose.§!"
+ trait_berserker:0 "Berserker"
+ trait_berserker_desc:0 "§LThis species flies into a berserk rage at the drop of a hat.§!"
 
  HIVE_SPECIES_MUST_BE_NON_HIVE:0 "$TRIGGER_FAIL$Requires §Y$ap_evolutionary_mastery$§! or §Y$civic_hive_spreading_plague$§!. Only organic non-§Y$trait_hive_mind$§! species can be assimilated."
 
@@ -67,6 +73,6 @@
  job_privateer:0 "Privateer"
  job_privateer_plural:0 "Privateers"
  job_privateer_desc:0 "Privateers are government-sponsored pirates allowed to attack the shipping of enemy empires."
- job_privateer_effect_desc:0 "Privateers produce £energy£ §Y$energy$§! and £minerals£ §Y$minerals$§! and increase §Y$NAVY_SIZE_TITLE$§!, but increase £crime£ §YCrime§!"
+ job_privateer_effect_desc:0 "Privateers produce £energy£ §Y$energy$§! and £minerals£ §Y$minerals$§! and increase §Y$NAVY_SIZE_TITLE$§!, but generate £crime£ §YCrime§!"
  mod_job_privateer_add: "$planet_privateers$"
  planet_privateers: "Privateer Jobs"
