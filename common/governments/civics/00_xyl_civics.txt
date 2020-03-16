@@ -73,7 +73,7 @@ civic_xenophagy = {
 	random_weight = { base = 5 }
 	modifier = {
 		planet_livestock_food_produces_add = 2
-		planet_livestock_unity_produces_add = 1
+		planet_livestock_unity_produces_add = 2
 	}
 }
 
