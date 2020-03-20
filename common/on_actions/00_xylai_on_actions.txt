@@ -12,6 +12,6 @@ empire_init_add_technologies = {
 # fromfrom: secondary species (if exists)
 empire_init_capital_planet = {
 	events = {
-		xylai.9
+		#xylai.9
 	}
 }
