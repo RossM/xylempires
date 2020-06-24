@@ -144,3 +144,57 @@ trait_genetic_memory = {
 		pop_ethic_xenophobe_attraction_mult = 0.20
 	}
 }
+
+trait_caste_morphism = {
+	cost = 2
+
+	modification = no
+
+	potential_crossbreeding_chance = 1.0
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+
+	custom_tooltip = trait_caste_morphism_effect
+}
+
+trait_caste_morphism_ruler = {
+	initial = no
+	modification = no
+	randomized = no
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+
+	modifier = {
+		planet_jobs_unity_produces_mult = 0.1
+		pop_cat_worker_happiness = -0.20
+		pop_cat_slave_happiness = -0.20
+	}
+}
+
+trait_caste_morphism_soldier = {
+	initial = no
+	modification = no
+	randomized = no
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+
+	modifier = {
+		army_damage_mult = 0.2
+		pop_cat_ruler_happiness = -0.20
+		pop_cat_worker_happiness = -0.20
+		pop_cat_slave_happiness = -0.20
+	}
+}
+
+trait_caste_morphism_worker = {
+	initial = no
+	modification = no
+	randomized = no
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+
+	modifier = {
+		planet_jobs_energy_produces_mult = 0.05
+		planet_jobs_minerals_produces_mult = 0.05
+		planet_jobs_food_produces_mult = 0.05
+		pop_cat_ruler_happiness = -0.20
+		pop_cat_specialist_happiness = -0.20
+	}
+}
+

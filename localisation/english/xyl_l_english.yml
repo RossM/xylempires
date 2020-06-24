@@ -69,6 +69,15 @@
  trait_tinkerer_desc:0 "§LThis species has an innate drive to experiment with machinery.§!"
  trait_genetic_memory:0 "Genetic Memory"
  trait_genetic_memory_desc:0 "§LShared memories bind this species to a common past.§!"
+ trait_caste_morphism:0 "Caste Morphism"
+ trait_caste_morphism_desc:0 "This species has castes with physical differences determined at birth."
+ trait_caste_morphism_effect:0 "Pops are assigned a caste at birth\nCastes provide bonuses depending on caste\nWorkers in the wrong job for their caste will be unhappy"
+ trait_caste_morphism_ruler:0 "Ruler Caste"
+ trait_caste_morphism_ruler_desc:0 "This individual belongs to the ruler caste."
+ trait_caste_morphism_soldier:0 "Soldier Caste"
+ trait_caste_morphism_soldier_desc:0 "This individual belongs to the soldier caste."
+ trait_caste_morphism_worker:0 "Worker Caste"
+ trait_caste_morphism_worker_desc:0 "This individual belongs to the worker caste."
 
  HIVE_SPECIES_MUST_BE_NON_HIVE:0 "$TRIGGER_FAIL$Requires §Y$ap_evolutionary_mastery$§! or §Y$civic_hive_spreading_plague$§!. Only organic non-§Y$trait_hive_mind$§! species can be assimilated."
 

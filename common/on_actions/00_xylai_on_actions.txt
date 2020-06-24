@@ -3,6 +3,17 @@
 empire_init_add_technologies = {
 	events = {
 		xylai.8
+	}
+}
+
+on_pop_added = {
+	events = {
 		xylai.9
+	}
+}
+
+on_pop_grown = {
+	events = {
+		xylai.10
 	}
 }

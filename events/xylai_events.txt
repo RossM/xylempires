@@ -161,3 +161,124 @@ country_event = {
 		give_technology = { message = no tech = tech_resort_colonies }
 	}
 }
+
+# Triggered when a new pop is added to a planet
+pop_event = {
+	id = xylai.9
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_trait = trait_caste_morphism
+		NOT = {
+			OR = {
+				has_trait = trait_caste_morphism_ruler
+				has_trait = trait_caste_morphism_soldier
+				has_trait = trait_caste_morphism_worker
+			}
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				is_pop_category = ruler
+			}
+			modify_species = {
+				add_trait = trait_caste_morphism_ruler
+			}
+		}
+		else_if = {
+			limit = {
+				has_job = enforcer
+			}
+			modify_species = {
+				add_trait = trait_caste_morphism_soldier
+			}
+		}
+		else_if = {
+			limit = {
+				is_pop_category = specialist
+			}
+			random_list = {
+				10 = {
+					modify_species = {
+						add_trait = trait_caste_morphism_ruler
+					}
+				}
+				30 = {
+					modify_species = {
+						add_trait = trait_caste_morphism_soldier
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_job = unemployed
+			}
+			random_list = {
+				30 = {
+					modify_species = {
+						add_trait = trait_caste_morphism_soldier
+					}
+				}
+				60 = {
+					modify_species = {
+						add_trait = trait_caste_morphism_worker
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				is_pop_category = worker
+			}
+			modify_species = {
+				add_trait = trait_caste_morphism_worker
+			}
+		}
+		else = {
+			random_list = {
+				10 = {
+					modify_species = {
+						add_trait = trait_caste_morphism_ruler
+					}
+				}
+				30 = {
+					modify_species = {
+						add_trait = trait_caste_morphism_soldier
+					}
+				}
+				60 = {
+					modify_species = {
+						add_trait = trait_caste_morphism_worker
+					}
+				}
+			}
+		}
+	}
+}+
+
+# Triggered when a new pop is added to a planet
+pop_event = {
+	id = xylai.10
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_trait = trait_caste_morphism
+		OR = {
+			has_trait = trait_caste_morphism_ruler
+			has_trait = trait_caste_morphism_soldier
+			has_trait = trait_caste_morphism_worker
+		}
+	}
+
+	immediate = {
+		modify_species = {
+			remove_trait = trait_caste_morphism_ruler
+			remove_trait = trait_caste_morphism_soldier
+			remove_trait = trait_caste_morphism_worker
+		}
+	}
