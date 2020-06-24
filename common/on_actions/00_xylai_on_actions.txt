@@ -3,15 +3,6 @@
 empire_init_add_technologies = {
 	events = {
 		xylai.8
-	}
-}
-
-# Called before empire_init_create_capital_pops.
-# scope: planet
-# from: founder species
-# fromfrom: secondary species (if exists)
-empire_init_capital_planet = {
-	events = {
-		#xylai.9
+		xylai.9
 	}
 }

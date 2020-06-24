@@ -75,22 +75,8 @@ civic_xenophagy = {
 		planet_livestock_food_produces_add = 2
 		planet_livestock_unity_produces_add = 2
 	}
-}
 
-civic_privateers = {
-	potential = {
-		ethics = { NOT = { value = ethic_gestalt_consciousness } }
-		authority = { NOT = { value = auth_corporate } }
-	}
-
-	random_weight = { base = 5 }
-
-	modifier = {
-		job_privateer_add = 1
-		job_privateer_per_pop = 0.04
-	}
-
-	description = "civic_privateers_effects"
+	description = "civic_xenophagy_effects"
 }
 
 civic_machine_diplomatic_protocols = {
