@@ -30,7 +30,7 @@
  
  civic_corp_destination_resorts:0 "Destination Resorts"
  civic_corp_destination_resorts_desc:0 "This corporation has extensive tourism operations."
- civic_corp_destination_resorts_effects:0 "Begin with the §YResort Worlds§! technology.\n\n$MOD_POP_GROWTH_FROM_IMMIGRATION$: §G+15%§!"
+ civic_corp_destination_resorts_effects:0 "Begin with the §YResort Worlds§! technology."
  civic_corp_mining_guilds:0 "Mineral Extractors"
  civic_corp_mining_guilds_desc:0 "This corporation began as a mining conglomerate."
  civic_hive_spreading_plague:0 "Spreading Plague"
@@ -58,7 +58,7 @@
  trait_robot_underpowered_servos_desc:0 "§LSmall motors and weak artificial muscles were never designed for heavy labor.§!"
  trait_musical:0 "Musical"
  trait_musical_desc:0 "§LEverybody dance now!§!"
- trait_musical_effect:0 "£amenities£ Amenities from £job_entertainer£ §Y$job_entertainer_plural$§!: §G+100%§!\n£unity£ Unity from £job_entertainer£ §Y$job_entertainer_plural$§!: §G+100%§!\n$mod_pop_ethic_xenophile_attraction_mult$: §G+30%§!"
+ trait_musical_effect:0 "$mod_pop_cat_specialist_happiness$: §G+10%§!\n£amenities£ Amenities from £job_entertainer£ §Y$job_entertainer_plural$§!: §G+100%§!\n£unity£ Unity from £job_entertainer£ §Y$job_entertainer_plural$§!: §G+100%§!\n$mod_pop_ethic_xenophile_attraction_mult$: §G+30%§!"
  trait_nanosymbionts:0 "Nanosymbionts"
  trait_nanosymbionts_desc:0 "§LSymbiotic nanomachines grant enhanced abilities, at a cost.§!"
  trait_empathic_link:0 "Empathic Link"
