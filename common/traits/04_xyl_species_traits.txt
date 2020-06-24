@@ -87,7 +87,8 @@ trait_nanosymbionts = {
 
 	modifier = {
 		leader_age = 10
-		army_damage_mult = 0.15
+		army_damage_mult = 0.10
+		planet_jobs_produces_mult = 0.025
 		pop_environment_tolerance = -0.05
 	}
 }
@@ -125,8 +126,8 @@ trait_tinkerer = {
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 
 	modifier = {
-		planet_metallurgists_engineering_research_produces_add = 2
-		planet_pop_assemblers_engineering_research_produces_add = 2
+		planet_metallurgists_engineering_research_produces_add = 3
+		planet_pop_assemblers_engineering_research_produces_add = 3
 		pop_ethic_materialist_attraction_mult = 0.30
 	}
 }	

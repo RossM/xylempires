@@ -48,6 +48,7 @@ civic_hive_spreading_plague = {
 	}
 
 	modifier = {
+		bio_pop_growth_speed = 0.20
 		army_damage_mult = 0.30
 	}
 
@@ -72,6 +73,7 @@ civic_xenophagy = {
 	}
 	random_weight = { base = 5 }
 	modifier = {
+		army_attack_morale_mult = 0.30
 		planet_livestock_food_produces_add = 2
 		planet_livestock_unity_produces_add = 2
 	}
