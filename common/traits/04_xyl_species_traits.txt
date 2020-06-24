@@ -68,8 +68,6 @@ trait_robot_underpowered_servos = {
 trait_musical = {
 	cost = 1
 
-	opposites = { "trait_enigmatic_anatomy" }
-
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 
@@ -81,10 +79,8 @@ trait_musical = {
 	}
 }
 
-trait_enigmatic_anatomy = {
+trait_nanosymbionts = {
 	cost = 1
-
-	opposites = { "trait_musical" }
 
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { BIOLOGICAL LITHOID }
@@ -92,15 +88,12 @@ trait_enigmatic_anatomy = {
 	modifier = {
 		leader_age = 10
 		army_damage_mult = 0.15
-		pop_ethic_xenophobe_attraction_mult = 0.30
 		pop_environment_tolerance = -0.05
 	}
 }
 
 trait_empathic_link = {
 	cost = 1
-
-	opposites = { "trait_berserker" }
 
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { BIOLOGICAL LITHOID }
@@ -114,8 +107,6 @@ trait_empathic_link = {
 
 trait_berserker = {
 	cost = 1
-
-	opposites = { "trait_empathic_link" }
 
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { BIOLOGICAL LITHOID }
@@ -139,3 +130,17 @@ trait_tinkerer = {
 		pop_ethic_materialist_attraction_mult = 0.30
 	}
 }	
+
+trait_genetic_memory = {
+	cost = 1
+
+	potential_crossbreeding_chance = 1.0
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+
+	modifier = {
+		planet_administrators_unity_produces_mult = 0.5
+		planet_nobles_unity_produces_mult = 0.5
+		pop_ethic_spiritualist_attraction_mult = 0.20
+		pop_ethic_xenophobe_attraction_mult = 0.20
+	}
+}

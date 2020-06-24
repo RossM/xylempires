@@ -538,6 +538,9 @@ planet_managers = {
 
 planet_administrators = {
 	parent = planet_jobs
+	generate_mult_modifiers = {	# Xyl
+		produces
+	}
 }
 
 planet_researchers = {
@@ -573,6 +576,9 @@ planet_culture_workers = {
 
 planet_nobles = {
 	parent = planet_jobs
+	generate_mult_modifiers = {	# Xyl
+		produces
+	}
 }
 
 planet_merchants = {
