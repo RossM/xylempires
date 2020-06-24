@@ -77,6 +77,8 @@ trait_musical = {
 
 	custom_tooltip = trait_musical_effect
 
+	opposites = { "trait_hive_mind" "trait_machine_unit" }
+
 	modifier = {
 		pop_cat_specialist_happiness = 0.10
 		planet_entertainers_unity_produces_add = 2
@@ -105,6 +107,8 @@ trait_empathic_link = {
 
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { BIOLOGICAL LITHOID }
+
+	opposites = { "trait_hive_mind" "trait_machine_unit" }
 
 	modifier = {
 		pop_happiness = 0.05
@@ -147,6 +151,8 @@ trait_genetic_memory = {
 
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { BIOLOGICAL LITHOID }
+
+	opposites = { "trait_hive_mind" "trait_machine_unit" }
 
 	modifier = {
 		planet_administrators_unity_produces_mult = 0.5
