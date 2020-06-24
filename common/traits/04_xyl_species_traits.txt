@@ -1,5 +1,6 @@
 trait_robot_corrupted_logic = {
 	cost = -2
+	icon = "gfx/interface/icons/traits/trait_robot_corrupted_logic.png"
 
 	opposites = { "trait_robot_logic_engines" }
 	allowed_archetypes = { ROBOT MACHINE }
@@ -23,6 +24,7 @@ trait_robot_corrupted_logic = {
 
 trait_robot_leaky_power_cells = {
 	cost = -2
+	icon = "gfx/interface/icons/traits/trait_robot_leaky_power_cells.png"
 
 	opposites = { "trait_robot_superconductive" }
 	allowed_archetypes = { ROBOT MACHINE }
@@ -45,6 +47,7 @@ trait_robot_leaky_power_cells = {
 
 trait_robot_underpowered_servos = {
 	cost = -1
+	icon = "gfx/interface/icons/traits/trait_robot_underpowered_servos.png"
 
 	allowed_archetypes = { ROBOT MACHINE }
 	
@@ -67,6 +70,7 @@ trait_robot_underpowered_servos = {
 
 trait_musical = {
 	cost = 1
+	icon = "gfx/interface/icons/traits/trait_musical.png"
 
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { BIOLOGICAL LITHOID }
@@ -82,6 +86,7 @@ trait_musical = {
 
 trait_nanosymbionts = {
 	cost = 1
+	icon = "gfx/interface/icons/traits/trait_nanosymbionts.png"
 
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { BIOLOGICAL LITHOID }
@@ -96,6 +101,7 @@ trait_nanosymbionts = {
 
 trait_empathic_link = {
 	cost = 1
+	icon = "gfx/interface/icons/traits/trait_empathic_link.png"
 
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { BIOLOGICAL LITHOID }
@@ -109,6 +115,7 @@ trait_empathic_link = {
 
 trait_berserker = {
 	cost = 1
+	icon = "gfx/interface/icons/traits/trait_berserker.png"
 
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { BIOLOGICAL LITHOID }
@@ -122,6 +129,7 @@ trait_berserker = {
 
 trait_tinkerer = {
 	cost = 1
+	icon = "gfx/interface/icons/traits/trait_tinkerer.png"
 
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { BIOLOGICAL LITHOID }
@@ -135,6 +143,7 @@ trait_tinkerer = {
 
 trait_genetic_memory = {
 	cost = 1
+	icon = "gfx/interface/icons/traits/trait_genetic_memory.png"
 
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { BIOLOGICAL LITHOID }
@@ -149,6 +158,7 @@ trait_genetic_memory = {
 
 trait_caste_morphism = {
 	cost = 2
+	icon = "gfx/interface/icons/traits/trait_caste_morphism.png"
 
 	modification = no
 
@@ -159,6 +169,8 @@ trait_caste_morphism = {
 }
 
 trait_caste_morphism_ruler = {
+	icon = "gfx/interface/icons/traits/trait_caste_morphism_ruler.png"
+
 	initial = no
 	modification = no
 	randomized = no
@@ -172,6 +184,8 @@ trait_caste_morphism_ruler = {
 }
 
 trait_caste_morphism_soldier = {
+	icon = "gfx/interface/icons/traits/trait_caste_morphism_soldier.png"
+
 	initial = no
 	modification = no
 	randomized = no
@@ -186,6 +200,8 @@ trait_caste_morphism_soldier = {
 }
 
 trait_caste_morphism_worker = {
+	icon = "gfx/interface/icons/traits/trait_caste_morphism_worker.png"
+
 	initial = no
 	modification = no
 	randomized = no

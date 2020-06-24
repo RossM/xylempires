@@ -1,0 +1,31 @@
+Size: 29 px
+
+Standard civics/traits
+Top: 00DEA8
+Bottom: 008B6B
+Fill: 002724
+
+
+Negative traits
+Top: ce050a
+Bottom: 880408
+Fill: 280a00
+
+
+Corporate traits
+Top: b2b74a
+Bottom: 555723
+Fill: 0b0b05
+
+
+Machine intelligence traits
+Top: 02ffec
+Bottom: 007b72
+Fill: 001923
+
+
+Hive traits
+Top: e0a520
+Bottom: 7a5501
+Fill: ebddbe
+
