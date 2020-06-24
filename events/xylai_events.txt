@@ -201,31 +201,14 @@ pop_event = {
 				is_pop_category = specialist
 			}
 			random_list = {
-				10 = {
+				20 = {
 					modify_species = {
 						add_trait = trait_caste_morphism_ruler
 					}
 				}
-				30 = {
+				80 = {
 					modify_species = {
 						add_trait = trait_caste_morphism_soldier
-					}
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				has_job = unemployed
-			}
-			random_list = {
-				30 = {
-					modify_species = {
-						add_trait = trait_caste_morphism_soldier
-					}
-				}
-				60 = {
-					modify_species = {
-						add_trait = trait_caste_morphism_worker
 					}
 				}
 			}
@@ -234,8 +217,17 @@ pop_event = {
 			limit = {
 				is_pop_category = worker
 			}
-			modify_species = {
-				add_trait = trait_caste_morphism_worker
+			random_list = {
+				20 = {
+					modify_species = {
+						add_trait = trait_caste_morphism_soldier
+					}
+				}
+				80 = {
+					modify_species = {
+						add_trait = trait_caste_morphism_worker
+					}
+				}
 			}
 		}
 		else = {
@@ -245,12 +237,12 @@ pop_event = {
 						add_trait = trait_caste_morphism_ruler
 					}
 				}
-				30 = {
+				20 = {
 					modify_species = {
 						add_trait = trait_caste_morphism_soldier
 					}
 				}
-				60 = {
+				70 = {
 					modify_species = {
 						add_trait = trait_caste_morphism_worker
 					}
