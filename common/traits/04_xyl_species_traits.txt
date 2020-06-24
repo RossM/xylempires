@@ -126,3 +126,16 @@ trait_berserker = {
 		pop_ethic_militarist_attraction_mult = 0.30
 	}
 }
+
+trait_tinkerer = {
+	cost = 1
+
+	potential_crossbreeding_chance = 1.0
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+
+	modifier = {
+		planet_metallurgists_engineering_research_produces_add = 2
+		planet_pop_assemblers_engineering_research_produces_add = 2
+		pop_ethic_materialist_attraction_mult = 0.30
+	}
+}	

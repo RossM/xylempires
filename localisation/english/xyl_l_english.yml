@@ -65,11 +65,16 @@
  trait_empathic_link_desc:0 "§LA low-level communal psychic link gives this species a strong sense of purpose.§!"
  trait_berserker:0 "Berserker"
  trait_berserker_desc:0 "§LThis species flies into a berserk rage at the drop of a hat.§!"
+ trait_tinkerer:0 "Tinkerer"
+ trait_tinkerer_desc:0 "§LThis species has an innate drive to experiment with machinery.§!"
 
  HIVE_SPECIES_MUST_BE_NON_HIVE:0 "$TRIGGER_FAIL$Requires §Y$ap_evolutionary_mastery$§! or §Y$civic_hive_spreading_plague$§!. Only organic non-§Y$trait_hive_mind$§! species can be assimilated."
 
  mod_planet_livestock_food_produces_mult:0 "$mod_planet_livestock_food_produces_mult$"
  mod_planet_livestock_unity_produces_add:0 "£unity£ Unity from £job_livestock£ §Y$job_livestock_plural$§!"
+ mod_planet_researchers_energy_produces_add:0 "£energy£ $energy$ from £job_researcher£ §Y$job_researcher_plural$§!"
+ mod_planet_pop_assemblers_engineering_research_produces_add:0 "£engineering£ $engineering_research$ from £job_roboticist£ $job_roboticist_plural$"
+ mod_planet_metallurgists_engineering_research_produces_add:0 "£engineering£ $engineering_research$ from £job_foundry£ $job_foundry_plural$"
 
  job_privateer:0 "Privateer"
  job_privateer_plural:0 "Privateers"

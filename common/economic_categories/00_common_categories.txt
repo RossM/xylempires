@@ -482,6 +482,9 @@ planet_bio_trophies = {
 
 planet_pop_assemblers = {
 	parent = planet_jobs
+	generate_add_modifiers = {	# Xyl
+		produces
+	}
 	generate_mult_modifiers = {
 		upkeep
 	}
@@ -540,6 +543,9 @@ planet_administrators = {
 planet_researchers = {
 	icon = "job_researcher"
 	parent = planet_jobs
+	generate_add_modifiers = {	# Xyl
+		produces
+	}
 	generate_mult_modifiers = {
 		produces
 		upkeep
@@ -549,6 +555,9 @@ planet_researchers = {
 planet_metallurgists = {
 	icon = "job_foundry"
 	parent = planet_jobs
+	generate_add_modifiers = {	# Xyl
+		produces
+	}
 	generate_mult_modifiers = {
 		produces
 		upkeep
@@ -572,8 +581,8 @@ planet_merchants = {
 
 planet_entertainers = {
 	parent = planet_jobs
-	generate_add_modifiers = {	
-		produces				# Xyl
+	generate_add_modifiers = {	# Xyl
+		produces
 	}
 }
 
@@ -716,6 +725,9 @@ pop_category_workers = {
 
 pop_category_specialists = {
 	parent = planet_pops
+	generate_add_modifiers = {	# Xyl
+		produces
+	}
 }
 
 pop_category_rulers = {
