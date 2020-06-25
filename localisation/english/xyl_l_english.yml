@@ -58,7 +58,7 @@
  trait_robot_underpowered_servos_desc:0 "§LSmall motors and weak artificial muscles were never designed for heavy labor.§!"
  trait_musical:0 "Musical"
  trait_musical_desc:0 "§LEverybody dance now!§!"
- trait_musical_effect:0 "$mod_pop_cat_specialist_happiness$: §G+10%§!\n£amenities£ Amenities from £job_entertainer£ §Y$job_entertainer_plural$§!: §G+100%§!\n£unity£ Unity from £job_entertainer£ §Y$job_entertainer_plural$§!: §G+100%§!\n$mod_pop_ethic_xenophile_attraction_mult$: §G+30%§!"
+ trait_musical_effect:0 "$mod_pop_cat_specialist_happiness$: §G+10%§!\n£amenities£ Amenities from £job_entertainer£ §Y$job_entertainer_plural$§!: §G+100%§!\n£unity£ Unity from £job_entertainer£ §Y$job_entertainer_plural$§!: §G+100%§!"
  trait_nanosymbionts:0 "Nanosymbionts"
  trait_nanosymbionts_desc:0 "§LSymbiotic nanomachines grant enhanced abilities, at a cost.§!"
  trait_empathic_link:0 "Empathic Link"
@@ -88,6 +88,7 @@
  mod_planet_metallurgists_engineering_research_produces_add:0 "£engineering£ $engineering_research$ from £job_foundry£ §Y$job_foundry_plural$§!"
  mod_planet_administrators_unity_produces_mult:0 "£unity£ $unity$ from £job_administrator£ §Y$job_administrator_plural$§!"
  mod_planet_nobles_unity_produces_mult:0 "£unity£ $unity$ from £job_noble£ §Y$job_noble_plural$§!"
+ mod_planet_priests_unity_produces_mult:0 "£unity£ $unity$ from £job_priest£ §Y$job_priest_plural$§!"
  mod_planet_entertainers_unity_produces_add:0 "£unity£ $unity$ from £job_entertainer£ §Y$job_entertainer_plural$§!"
 
  job_privateer:0 "Privateer"

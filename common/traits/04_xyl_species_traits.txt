@@ -82,7 +82,6 @@ trait_musical = {
 	modifier = {
 		pop_cat_specialist_happiness = 0.10
 		planet_entertainers_unity_produces_add = 2
-		pop_ethic_xenophile_attraction_mult = 0.30
 	}
 }
 
@@ -113,7 +112,6 @@ trait_empathic_link = {
 	modifier = {
 		pop_happiness = 0.05
 		pop_ethic_pacifist_attraction_mult = 0.30
-		army_attack_morale_mult = -0.2
 	}
 }
 
@@ -127,7 +125,7 @@ trait_berserker = {
 	modifier = {
 		army_attack_damage_mult = 0.20
 		army_attack_morale_mult = 0.20
-		pop_ethic_militarist_attraction_mult = 0.30
+		armies_upkeep_mult = -0.10
 	}
 }
 
@@ -141,7 +139,6 @@ trait_tinkerer = {
 	modifier = {
 		planet_metallurgists_engineering_research_produces_add = 3
 		planet_pop_assemblers_engineering_research_produces_add = 3
-		pop_ethic_materialist_attraction_mult = 0.30
 	}
 }	
 
@@ -157,8 +154,7 @@ trait_genetic_memory = {
 	modifier = {
 		planet_administrators_unity_produces_mult = 0.5
 		planet_nobles_unity_produces_mult = 0.5
-		pop_ethic_spiritualist_attraction_mult = 0.20
-		pop_ethic_xenophobe_attraction_mult = 0.20
+		planet_priests_unity_produces_mult = 0.5
 	}
 }
 

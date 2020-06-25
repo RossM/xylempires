@@ -598,6 +598,9 @@ planet_soldiers = {
 
 planet_priests = {
 	parent = planet_jobs
+	generate_mult_modifiers = {	# Xyl
+		produces
+	}
 }
 
 planet_enforcers = {
