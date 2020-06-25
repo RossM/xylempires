@@ -35,7 +35,7 @@ civic_corp_mining_guilds = {
 	}
 	random_weight = { base = 5 }
 	modifier = {
-		country_minerals_produces_mult = 0.15
+		planet_miners_energy_produces_add = 2
 	}
 }
 

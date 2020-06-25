@@ -31,8 +31,8 @@
  civic_corp_destination_resorts:0 "Destination Resorts"
  civic_corp_destination_resorts_desc:0 "This corporation has extensive tourism operations."
  civic_corp_destination_resorts_effects:0 "Begin with the §YResort Worlds§! technology."
- civic_corp_mining_guilds:0 "Mineral Extractors"
- civic_corp_mining_guilds_desc:0 "This corporation began as a mining conglomerate."
+ civic_corp_mining_guilds:0 "Mineral Monopoly"
+ civic_corp_mining_guilds_desc:0 "This corporation began as a mining conglomerate, and has cornered the market for certain rare minerals."
  civic_hive_spreading_plague:0 "Spreading Plague"
  civic_hive_spreading_plague_desc:0 "This hive mind is actually a psionic disease capable of infecting a wide variety of species."
  civic_hive_spreading_plague_effects:0 "Unlocks the §YAssimilation§! Citizenship §HSpecies Right§! for biological species\nHas the §Y'Assimilation'§! casus belli on all other empires\nDecreased §YOpinion§! for most other empires"
@@ -90,7 +90,8 @@
  mod_planet_nobles_unity_produces_mult:0 "£unity£ $unity$ from £job_noble£ §Y$job_noble_plural$§!"
  mod_planet_priests_unity_produces_mult:0 "£unity£ $unity$ from £job_priest£ §Y$job_priest_plural$§!"
  mod_planet_entertainers_unity_produces_add:0 "£unity£ $unity$ from £job_entertainer£ §Y$job_entertainer_plural$§!"
-
+ mod_planet_miners_energy_produces_add:0 "£energy£ $energy$ from £job_miner£ §Y$job_miner_plural$§!"
+ 
  job_privateer:0 "Privateer"
  job_privateer_plural:0 "Privateers"
  job_privateer_desc:0 "Privateers are government-sponsored pirates allowed to attack the shipping of enemy empires."
