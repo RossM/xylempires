@@ -180,77 +180,62 @@ pop_event = {
 	}
 
 	immediate = {
-		if = {
-			limit = {
-				is_pop_category = ruler
-			}
-			modify_species = {
-				add_trait = trait_caste_morphism_ruler
-			}
-		}
-		else_if = {
-			limit = {
-				has_job = enforcer
-			}
-			modify_species = {
-				add_trait = trait_caste_morphism_soldier
-			}
-		}
-		else_if = {
-			limit = {
-				is_pop_category = specialist
-			}
-			random_list = {
-				20 = {
-					modify_species = {
-						add_trait = trait_caste_morphism_ruler
+		random_list = {
+			5 = {
+				modifier = {
+					factor = 10
+					OR = {
+						has_job = priest
+						has_job = entertainer
+						has_job = culture_worker
 					}
 				}
-				80 = {
-					modify_species = {
-						add_trait = trait_caste_morphism_soldier
+				modifier = {
+					factor = 0
+					OR = {
+						is_pop_category = worker
+						is_pop_category = slave
 					}
+				}
+				modify_species = {
+					add_trait = trait_caste_morphism_ruler
 				}
 			}
-		}
-		else_if = {
-			limit = {
-				is_pop_category = worker
+			20 = {
+				modifier = {
+					factor = 10
+					OR = {
+						has_job = enforcer
+						has_job = duelist
+					}
+				}
+				modifier = {
+					factor = 0
+					OR = {
+						is_pop_category = ruler
+						is_pop_category = worker
+						is_pop_category = slave
+					}
+				}
+				modify_species = {
+					add_trait = trait_caste_morphism_soldier
+				}
 			}
-			random_list = {
-				20 = {
-					modify_species = {
-						add_trait = trait_caste_morphism_soldier
+			75 = {
+				modifier = {
+					factor = 0
+					OR = {
+						is_pop_category = ruler
+						is_pop_category = specialist
 					}
 				}
-				80 = {
-					modify_species = {
-						add_trait = trait_caste_morphism_worker
-					}
-				}
-			}
-		}
-		else = {
-			random_list = {
-				10 = {
-					modify_species = {
-						add_trait = trait_caste_morphism_ruler
-					}
-				}
-				20 = {
-					modify_species = {
-						add_trait = trait_caste_morphism_soldier
-					}
-				}
-				70 = {
-					modify_species = {
-						add_trait = trait_caste_morphism_worker
-					}
+				modify_species = {
+					add_trait = trait_caste_morphism_worker
 				}
 			}
 		}
 	}
-}+
+}
 
 # Triggered when a new pop is added to a planet
 pop_event = {
