@@ -506,8 +506,8 @@ spreading_plague = {
 	bravery = 1.2
 	combat_bravery = 1.0
 
-	military_spending = 1.0
-	colony_spending = 1.4
+	military_spending = 0.8
+	colony_spending = 1.2
 
 	federation_acceptance = -50
 
