@@ -274,3 +274,4 @@ pop_event = {
 			remove_trait = trait_caste_morphism_worker
 		}
 	}
+}
