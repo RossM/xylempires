@@ -35,8 +35,7 @@ civic_corp_mining_guilds = {
 	}
 	random_weight = { base = 5 }
 	modifier = {
-#		planet_jobs_minerals_produces_mult = 0.15
-		planet_miners_minerals_produces_add = 1
+		country_minerals_produces_mult = 0.15
 	}
 }
 
@@ -82,9 +81,9 @@ civic_xenophagy = {
 	}
 	random_weight = { base = 5 }
 	modifier = {
-		army_attack_morale_mult = 0.30
 		planet_livestock_food_produces_add = 2
 		planet_livestock_unity_produces_add = 2
+		armies_upkeep_mult = -0.20
 	}
 
 	description = "civic_xenophagy_effects"
