@@ -434,11 +434,11 @@ predatory_raiders = {
 	# Based off hegemonic imperialists
 	aggressiveness = 2.5
 	trade_willingness = 0.8
-	bravery = 1.2
+	bravery = 1.5
 	combat_bravery = 1.2
 
 	military_spending = 1.3
-	colony_spending = 0.8
+	colony_spending = 0.7
 
 	federation_acceptance = -20
 	nap_acceptance = -20
