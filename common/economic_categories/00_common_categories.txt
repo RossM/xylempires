@@ -513,6 +513,9 @@ planet_livestock = {
 	generate_add_modifiers = {
 		produces
 	}
+	generate_mult_modifiers = {	# Xyl
+		produces
+	}
 }
 
 planet_technician = {

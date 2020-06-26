@@ -81,8 +81,9 @@
 
  HIVE_SPECIES_MUST_BE_NON_HIVE:0 "$TRIGGER_FAIL$Requires §Y$ap_evolutionary_mastery$§! or §Y$civic_hive_spreading_plague$§!. Only organic non-§Y$trait_hive_mind$§! species can be assimilated."
 
- mod_planet_livestock_food_produces_add:0 "$mod_planet_livestock_food_produces_mult$"
+ mod_planet_livestock_food_produces_add:0 "£food£ $food$ from £job_livestock£ §Y$job_livestock_plural$§!"
  mod_planet_livestock_unity_produces_add:0 "£unity£ $unity$ from £job_livestock£ §Y$job_livestock_plural$§!"
+ mod_planet_livestock_food_produces_mult:0 "$mod_planet_livestock_food_produces_add$"
  mod_planet_researchers_energy_produces_add:0 "£energy£ $energy$ from £job_researcher£ §Y$job_researcher_plural$§!"
  mod_planet_pop_assemblers_engineering_research_produces_add:0 "£engineering£ $engineering_research$ from £job_roboticist£ §Y$job_roboticist_plural$§!"
  mod_planet_metallurgists_engineering_research_produces_add:0 "£engineering£ $engineering_research$ from £job_foundry£ §Y$job_foundry_plural$§!"
