@@ -170,12 +170,10 @@ pop_event = {
 
 	trigger = {
 		has_trait = trait_caste_morphism
-		NOT = {
-			OR = {
-				has_trait = trait_caste_morphism_ruler
-				has_trait = trait_caste_morphism_soldier
-				has_trait = trait_caste_morphism_worker
-			}
+		NOR = {
+			has_trait = trait_caste_morphism_ruler
+			has_trait = trait_caste_morphism_soldier
+			has_trait = trait_caste_morphism_worker
 		}
 	}
 
