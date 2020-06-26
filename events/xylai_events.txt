@@ -235,7 +235,7 @@ pop_event = {
 	}
 }
 
-# Triggered when a new pop is added to a planet
+# Triggered when a new pop is grown
 pop_event = {
 	id = xylai.10
 	hide_window = yes
