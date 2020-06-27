@@ -211,7 +211,6 @@ pop_event = {
 					factor = 0
 					OR = {
 						is_pop_category = ruler
-						is_pop_category = worker
 						is_pop_category = slave
 					}
 				}
