@@ -501,7 +501,7 @@ predatory_raiders = {
 }
 
 spreading_plague = {
-	aggressiveness = 1.5
+	aggressiveness = 2.0
 	trade_willingness = 0.5
 	bravery = 1.2
 	combat_bravery = 1.0
