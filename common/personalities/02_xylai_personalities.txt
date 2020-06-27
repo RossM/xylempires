@@ -73,13 +73,13 @@ opportunistic_scavengers = {
 # Conformists, Rapid Breeders, Fleeting
 devoted_hive = {
 	# Based off evangelising zealots
-	aggressiveness = 2.0	# only attack if they can't expand peacefully
+	aggressiveness = 3.0	# only attack if they can't expand peacefully
 	trade_willingness = 0.75
-	bravery = 1.5
+	bravery = 1.2
 	combat_bravery = 1.25
 
-	military_spending = 1.0
-	colony_spending = 1.0
+	military_spending = 0.9
+	colony_spending = 1.1
 
 	federation_acceptance = -100
 	nap_acceptance = 0
